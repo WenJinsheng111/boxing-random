@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://boxingrandom.org/sitemap.xml
+Sitemap: https://boxingrandom.online/sitemap.xml
