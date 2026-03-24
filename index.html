@@ -23,7 +23,8 @@
     <meta name="twitter:description" content="The ultimate crazy 2-player boxing game. Play free online, no download needed!">
     <meta name="twitter:image" content="/images/boxing-random-og.png">
 
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/favicon.png">
     <link rel="stylesheet" href="/css/style.css">
 
     <!-- WebApplication Structured Data -->
@@ -120,9 +121,9 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#game">Play Now</a></li>
+                <li><a href="#more-games">More Games</a></li>
                 <li><a href="#how-to-play">How to Play</a></li>
                 <li><a href="#tips">Tips</a></li>
-                <li><a href="#unblocked">Unblocked</a></li>
                 <li><a href="#faq">FAQ</a></li>
             </ul>
             <button class="mobile-menu-btn" aria-label="Toggle menu">&#9776;</button>
@@ -132,32 +133,95 @@
     <main>
         <!-- Section 1: Game Area -->
         <section id="game" class="game-section">
-            <div class="container">
-                <h1>Boxing Random - Play Free Unblocked Game Online</h1>
-                <p class="game-subtitle">The craziest physics-based 2-player boxing game. Challenge your friends and knock them out!</p>
-
-                <div class="game-wrapper">
-                    <div class="game-container" id="game-container">
-                        <div class="game-overlay" id="game-overlay">
-                            <button class="play-btn" id="play-btn">&#9654; Play Now</button>
+            <div class="game-layout">
+                <div class="game-main">
+                    <div class="game-wrapper">
+                        <div class="game-container" id="game-container">
+                            <div class="game-overlay" id="game-overlay">
+                                <button class="play-btn" id="play-btn">&#9654; Play Now</button>
+                            </div>
+                            <iframe
+                                id="game-frame"
+                                data-src="https://games.crazygames.com/en_US/boxing-random/index.html?skipPrerollFirstSession=true&czyExpSkipPlayNowOnly_CZY_18027_2=disabled&v=1.353"
+                                title="Boxing Random Game - Play Free Online"
+                                allow="autoplay; fullscreen; camera; focus-without-user-activation *; monetization; gamepad; keyboard-map *; xr-spatial-tracking; clipboard-write; web-share; accelerometer; magnetometer; gyroscope; display-capture"
+                                allowfullscreen
+                                playsinline
+                                scrolling="no"
+                            ></iframe>
                         </div>
-                        <iframe
-                            id="game-frame"
-                            data-src="https://games.crazygames.com/en_US/boxing-random/index.html?skipPrerollFirstSession=true&czyExpSkipPlayNowOnly_CZY_18027_2=disabled&v=1.353"
-                            title="Boxing Random Game - Play Free Online"
-                            allow="autoplay; fullscreen"
-                            allowfullscreen
-                        ></iframe>
                     </div>
+
+                    <div class="game-actions">
+                        <button class="action-btn" id="fullscreen-btn">&#x26F6; Fullscreen</button>
+                        <button class="action-btn hidden" id="back-to-boxing">&#8592; Back to Boxing Random</button>
+                        <div class="game-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="rating-text">4.7/5 (18,542 votes)</span>
+                        </div>
+                    </div>
+
+                    <h1 id="game-title">Boxing Random - Play Free Unblocked Game Online</h1>
+                    <p class="game-subtitle">The craziest physics-based 2-player boxing game. Challenge your friends and knock them out!</p>
                 </div>
 
-                <div class="game-actions">
-                    <button class="action-btn" id="fullscreen-btn">&#x26F6; Fullscreen</button>
-                    <div class="game-rating">
-                        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <span class="rating-text">4.7/5 (18,542 votes)</span>
+                <aside class="game-sidebar" id="more-games">
+                    <h3 class="sidebar-title">More Games</h3>
+                    <div class="sidebar-games" id="games-grid">
+                        <a href="#game" class="game-card" data-game-slug="basket-random" data-game-src="https://files.twoplayergames.org/files/games/other/Basket_Random/index.html" data-game-title="Basket Random">
+                            <div class="game-card-thumb"><img src="/images/games/basket-random.jpg" alt="Basket Random" loading="lazy"></div>
+                            <h3>Basket Random</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="soccer-random" data-game-src="https://files.twoplayergames.org/files/games/other/Soccer_Random/index.html" data-game-title="Soccer Random">
+                            <div class="game-card-thumb"><img src="/images/games/soccer-random.jpg" alt="Soccer Random" loading="lazy"></div>
+                            <h3>Soccer Random</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="volley-random" data-game-src="https://files.twoplayergames.org/files/games/o1/Volley_random/index.html" data-game-title="Volley Random">
+                            <div class="game-card-thumb"><img src="/images/games/volley-random.jpg" alt="Volley Random" loading="lazy"></div>
+                            <h3>Volley Random</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="boxing-stars" data-game-src="https://files.twoplayergames.org/files/games/o1/Boxing_Stars/index.html" data-game-title="Boxing Stars">
+                            <div class="game-card-thumb"><img src="/images/games/boxing-stars.jpg" alt="Boxing Stars" loading="lazy"></div>
+                            <h3>Boxing Stars</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="drunken-boxers" data-game-src="https://files.twoplayergames.org/files/games/o1/Drunken_Boxing/index.html" data-game-title="Drunken Boxers">
+                            <div class="game-card-thumb"><img src="/images/games/drunken-boxers.jpg" alt="Drunken Boxers" loading="lazy"></div>
+                            <h3>Drunken Boxers</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="mixed-macho-arts" data-game-src="https://files.twoplayergames.org/files/games/o2/Mixed_Macho_Arts/index.html" data-game-title="Mixed Macho Arts">
+                            <div class="game-card-thumb"><img src="/images/games/mixed-macho-arts.jpg" alt="Mixed Macho Arts" loading="lazy"></div>
+                            <h3>Mixed Macho Arts</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="ragdoll-flip" data-game-src="https://ragdoll-flip.1games.io/" data-game-title="Ragdoll Flip">
+                            <div class="game-card-thumb"><img src="/images/games/ragdoll-flip.png" alt="Ragdoll Flip" loading="lazy"></div>
+                            <h3>Ragdoll Flip</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="knife-master" data-game-src="https://knife-master.1games.io/" data-game-title="Knife Master">
+                            <div class="game-card-thumb"><img src="/images/games/knife-master.png" alt="Knife Master" loading="lazy"></div>
+                            <h3>Knife Master</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="mini-duels-battle" data-game-src="https://files.twoplayergames.org/files/games/o1/Mini_Duel_Battles/index.html" data-game-title="Mini Duels Battle">
+                            <div class="game-card-thumb"><img src="/images/games/mini-duels-battle.jpg" alt="Mini Duels Battle" loading="lazy"></div>
+                            <h3>Mini Duels Battle</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="mini-heads-party" data-game-src="https://files.twoplayergames.org/files/games/o2/Mini_Heads_Party/index.html" data-game-title="Mini Heads Party">
+                            <div class="game-card-thumb"><img src="/images/games/mini-heads-party.jpg" alt="Mini Heads Party" loading="lazy"></div>
+                            <h3>Mini Heads Party</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="minibattles" data-game-src="https://files.twoplayergames.org/files/games/o2/MiniBattles/index.html" data-game-title="MiniBattles">
+                            <div class="game-card-thumb"><img src="/images/games/minibattles.jpg" alt="MiniBattles 2-6 Players" loading="lazy"></div>
+                            <h3>MiniBattles</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="troll-boxing" data-game-src="https://files.twoplayergames.org/files/games/mobile/o1/Troll_Boxing/index.html" data-game-title="Troll Boxing">
+                            <div class="game-card-thumb"><img src="/images/games/troll-boxing.jpg" alt="Troll Boxing" loading="lazy"></div>
+                            <h3>Troll Boxing</h3>
+                        </a>
+                        <a href="#game" class="game-card" data-game-slug="basket-sport-stars" data-game-src="https://files.twoplayergames.org/files/games/h1/basket-sports-stars-v01d/index.html" data-game-title="Basket Sport Stars">
+                            <div class="game-card-thumb"><img src="/images/games/basket-sport-stars.jpg" alt="Basket Sport Stars" loading="lazy"></div>
+                            <h3>Basket Sport Stars</h3>
+                        </a>
                     </div>
-                </div>
+                </aside>
             </div>
         </section>
 
@@ -317,37 +381,7 @@
             </div>
         </section>
 
-        <!-- Section 7: Related Games -->
-        <section id="related-games" class="content-section alt-bg">
-            <div class="container">
-                <h2>More Random Games You'll Love</h2>
-                <p class="section-subtitle">If you enjoy Boxing Random, check out these other awesome games from the Random series and beyond.</p>
-                <div class="games-grid">
-                    <a href="#" class="game-card">
-                        <div class="game-card-thumb">🏀</div>
-                        <h3>Basketball Random</h3>
-                        <p>Random basketball madness with physics-based gameplay.</p>
-                    </a>
-                    <a href="#" class="game-card">
-                        <div class="game-card-thumb">⚽</div>
-                        <h3>Soccer Random</h3>
-                        <p>Crazy random soccer matches with unpredictable twists.</p>
-                    </a>
-                    <a href="#" class="game-card">
-                        <div class="game-card-thumb">🏐</div>
-                        <h3>Volleyball Random</h3>
-                        <p>Spike your way to victory in this random volleyball game.</p>
-                    </a>
-                    <a href="#" class="game-card">
-                        <div class="game-card-thumb">🤼</div>
-                        <h3>Wrestling Random</h3>
-                        <p>Grapple and throw your opponents in random wrestling matches.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 8: FAQ -->
+        <!-- Section 7: FAQ -->
         <section id="faq" class="content-section">
             <div class="container">
                 <h2>Frequently Asked Questions</h2>
