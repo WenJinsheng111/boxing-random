@@ -1,27 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage -->
     <url>
         <loc>https://boxingrandom.online/</loc>
-        <lastmod>2026-03-22</lastmod>
+        <lastmod>2026-03-26</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <!-- Category Pages -->
+    <url>
+        <loc>https://boxingrandom.online/games/fighting</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/games/sports</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/games/casual</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/games/racing</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/games/puzzle</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/games/2-player</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Game Pages - Fighting -->
+    <url>
+        <loc>https://boxingrandom.online/boxing-stars</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/drunken-boxers</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/mixed-macho-arts</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/troll-boxing</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Game Pages - Sports -->
+    <url>
+        <loc>https://boxingrandom.online/basket-random</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/soccer-random</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/volley-random</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/basket-sport-stars</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Game Pages - Casual & Party -->
+    <url>
+        <loc>https://boxingrandom.online/mini-duels-battle</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/mini-heads-party</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/minibattles</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/ragdoll-flip</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/knife-master</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/tapko</loc>
+        <lastmod>2026-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Game Pages - Racing -->
+    <url>
+        <loc>https://boxingrandom.online/cool-supercars-stunts-pvp</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/m5-city-driver</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/police-traffic-racer</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/slippery-drift-racing</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/racing-ball-adventure</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Game Pages - Puzzle -->
+    <url>
+        <loc>https://boxingrandom.online/bubble-shooter-pro-4</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/letter-boom-blast-rush</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Game Pages - Additional Sports -->
+    <url>
+        <loc>https://boxingrandom.online/challenge-the-football</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://boxingrandom.online/flag-football-game</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Game Pages - Additional Casual -->
+    <url>
+        <loc>https://boxingrandom.online/i-show-running-2d</loc>
+        <lastmod>2026-03-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Legal Pages -->
     <url>
         <loc>https://boxingrandom.online/privacy-policy</loc>
         <lastmod>2026-03-22</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.2</priority>
+        <priority>0.1</priority>
     </url>
     <url>
         <loc>https://boxingrandom.online/terms</loc>
         <lastmod>2026-03-22</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.2</priority>
+        <priority>0.1</priority>
     </url>
     <url>
         <loc>https://boxingrandom.online/dmca</loc>
         <lastmod>2026-03-22</lastmod>
         <changefreq>yearly</changefreq>
-        <priority>0.2</priority>
+        <priority>0.1</priority>
     </url>
 </urlset>

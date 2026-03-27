@@ -123,10 +123,20 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#game">Play Now</a></li>
-                <li><a href="#more-games">More Games</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="dropdown-trigger">Categories</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/games/fighting">Fighting Games</a></li>
+                        <li><a href="/games/sports">Sports Games</a></li>
+                        <li><a href="/games/casual">Casual & Party</a></li>
+                        <li><a href="/games/racing">Racing Games</a></li>
+                        <li><a href="/games/puzzle">Puzzle Games</a></li>
+                        <li><a href="/games/2-player">2 Player Games</a></li>
+                    </ul>
+                </li>
                 <li><a href="#how-to-play">How to Play</a></li>
-                <li><a href="#tips">Tips</a></li>
                 <li><a href="#faq">FAQ</a></li>
+                <li><a href="/games/2-player">2 Player</a></li>
             </ul>
             <button class="mobile-menu-btn" aria-label="Toggle menu">&#9776;</button>
         </nav>
@@ -136,6 +146,17 @@
         <!-- Section 1: Game Area -->
         <section id="game" class="game-section">
             <div class="game-layout">
+                <aside class="left-sidebar">
+                    <h3 class="sidebar-title">Categories</h3>
+                    <ul class="sidebar-categories">
+                        <li><a href="/games/fighting">Fighting Games</a></li>
+                        <li><a href="/games/sports">Sports Games</a></li>
+                        <li><a href="/games/casual">Casual & Party</a></li>
+                        <li><a href="/games/racing">Racing Games</a></li>
+                        <li><a href="/games/puzzle">Puzzle Games</a></li>
+                        <li><a href="/games/2-player">2 Player Games</a></li>
+                    </ul>
+                </aside>
                 <div class="game-main">
                     <div class="game-wrapper">
                         <div class="game-container" id="game-container">
@@ -156,7 +177,6 @@
 
                     <div class="game-actions">
                         <button class="action-btn" id="fullscreen-btn">&#x26F6; Fullscreen</button>
-                        <button class="action-btn hidden" id="back-to-boxing">&#8592; Back to Boxing Random</button>
                         <div class="game-rating">
                             <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
                             <span class="rating-text">4.7/5 (18,542 votes)</span>
@@ -170,57 +190,61 @@
                 <aside class="game-sidebar" id="more-games">
                     <h3 class="sidebar-title">More Games</h3>
                     <div class="sidebar-games" id="games-grid">
-                        <a href="#game" class="game-card" data-game-slug="basket-random" data-game-src="https://files.twoplayergames.org/files/games/other/Basket_Random/index.html" data-game-title="Basket Random">
+                        <a href="/basket-random" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/basket-random.jpg" alt="Basket Random" loading="lazy"></div>
                             <h3>Basket Random</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="soccer-random" data-game-src="https://files.twoplayergames.org/files/games/other/Soccer_Random/index.html" data-game-title="Soccer Random">
+                        <a href="/soccer-random" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/soccer-random.jpg" alt="Soccer Random" loading="lazy"></div>
                             <h3>Soccer Random</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="volley-random" data-game-src="https://files.twoplayergames.org/files/games/o1/Volley_random/index.html" data-game-title="Volley Random">
+                        <a href="/volley-random" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/volley-random.jpg" alt="Volley Random" loading="lazy"></div>
                             <h3>Volley Random</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="boxing-stars" data-game-src="https://files.twoplayergames.org/files/games/o1/Boxing_Stars/index.html" data-game-title="Boxing Stars">
+                        <a href="/boxing-stars" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/boxing-stars.jpg" alt="Boxing Stars" loading="lazy"></div>
                             <h3>Boxing Stars</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="drunken-boxers" data-game-src="https://files.twoplayergames.org/files/games/o1/Drunken_Boxing/index.html" data-game-title="Drunken Boxers">
+                        <a href="/drunken-boxers" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/drunken-boxers.jpg" alt="Drunken Boxers" loading="lazy"></div>
                             <h3>Drunken Boxers</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="mixed-macho-arts" data-game-src="https://files.twoplayergames.org/files/games/o2/Mixed_Macho_Arts/index.html" data-game-title="Mixed Macho Arts">
+                        <a href="/mixed-macho-arts" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/mixed-macho-arts.jpg" alt="Mixed Macho Arts" loading="lazy"></div>
                             <h3>Mixed Macho Arts</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="ragdoll-flip" data-game-src="https://ragdoll-flip.1games.io/" data-game-title="Ragdoll Flip">
+                        <a href="/ragdoll-flip" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/ragdoll-flip.png" alt="Ragdoll Flip" loading="lazy"></div>
                             <h3>Ragdoll Flip</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="knife-master" data-game-src="https://knife-master.1games.io/" data-game-title="Knife Master">
+                        <a href="/knife-master" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/knife-master.png" alt="Knife Master" loading="lazy"></div>
                             <h3>Knife Master</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="mini-duels-battle" data-game-src="https://files.twoplayergames.org/files/games/o1/Mini_Duel_Battles/index.html" data-game-title="Mini Duels Battle">
+                        <a href="/mini-duels-battle" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/mini-duels-battle.jpg" alt="Mini Duels Battle" loading="lazy"></div>
                             <h3>Mini Duels Battle</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="mini-heads-party" data-game-src="https://files.twoplayergames.org/files/games/o2/Mini_Heads_Party/index.html" data-game-title="Mini Heads Party">
+                        <a href="/mini-heads-party" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/mini-heads-party.jpg" alt="Mini Heads Party" loading="lazy"></div>
                             <h3>Mini Heads Party</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="minibattles" data-game-src="https://files.twoplayergames.org/files/games/o2/MiniBattles/index.html" data-game-title="MiniBattles">
-                            <div class="game-card-thumb"><img src="/images/games/minibattles.jpg" alt="MiniBattles 2-6 Players" loading="lazy"></div>
+                        <a href="/minibattles" class="game-card">
+                            <div class="game-card-thumb"><img src="/images/games/minibattles.jpg" alt="MiniBattles" loading="lazy"></div>
                             <h3>MiniBattles</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="troll-boxing" data-game-src="https://files.twoplayergames.org/files/games/mobile/o1/Troll_Boxing/index.html" data-game-title="Troll Boxing">
+                        <a href="/troll-boxing" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/troll-boxing.jpg" alt="Troll Boxing" loading="lazy"></div>
                             <h3>Troll Boxing</h3>
                         </a>
-                        <a href="#game" class="game-card" data-game-slug="basket-sport-stars" data-game-src="https://files.twoplayergames.org/files/games/h1/basket-sports-stars-v01d/index.html" data-game-title="Basket Sport Stars">
+                        <a href="/basket-sport-stars" class="game-card">
                             <div class="game-card-thumb"><img src="/images/games/basket-sport-stars.jpg" alt="Basket Sport Stars" loading="lazy"></div>
                             <h3>Basket Sport Stars</h3>
+                        </a>
+                        <a href="/tapko" class="game-card">
+                            <div class="game-card-thumb"><img src="/images/games/tapko.jpg" alt="Tapko" loading="lazy"></div>
+                            <h3>Tapko</h3>
                         </a>
                     </div>
                 </aside>
@@ -415,19 +439,183 @@
                 </div>
             </div>
         </section>
+
+        <!-- Browse by Category -->
+        <section class="category-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Fighting Games</h2>
+                    <a href="/games/fighting" class="view-all">View All &rarr;</a>
+                </div>
+                <div class="home-games-grid">
+                    <a href="/boxing-stars" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/boxing-stars.jpg" alt="Boxing Stars" loading="lazy"></div>
+                        <h3>Boxing Stars</h3>
+                    </a>
+                    <a href="/drunken-boxers" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/drunken-boxers.jpg" alt="Drunken Boxers" loading="lazy"></div>
+                        <h3>Drunken Boxers</h3>
+                    </a>
+                    <a href="/mixed-macho-arts" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/mixed-macho-arts.jpg" alt="Mixed Macho Arts" loading="lazy"></div>
+                        <h3>Mixed Macho Arts</h3>
+                    </a>
+                    <a href="/troll-boxing" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/troll-boxing.jpg" alt="Troll Boxing" loading="lazy"></div>
+                        <h3>Troll Boxing</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sports Games</h2>
+                    <a href="/games/sports" class="view-all">View All &rarr;</a>
+                </div>
+                <div class="home-games-grid">
+                    <a href="/basket-random" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/basket-random.jpg" alt="Basket Random" loading="lazy"></div>
+                        <h3>Basket Random</h3>
+                    </a>
+                    <a href="/soccer-random" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/soccer-random.jpg" alt="Soccer Random" loading="lazy"></div>
+                        <h3>Soccer Random</h3>
+                    </a>
+                    <a href="/volley-random" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/volley-random.jpg" alt="Volley Random" loading="lazy"></div>
+                        <h3>Volley Random</h3>
+                    </a>
+                    <a href="/basket-sport-stars" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/basket-sport-stars.jpg" alt="Basket Sport Stars" loading="lazy"></div>
+                        <h3>Basket Sport Stars</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Casual & Party Games</h2>
+                    <a href="/games/casual" class="view-all">View All &rarr;</a>
+                </div>
+                <div class="home-games-grid">
+                    <a href="/minibattles" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/minibattles.jpg" alt="MiniBattles" loading="lazy"></div>
+                        <h3>MiniBattles</h3>
+                    </a>
+                    <a href="/mini-duels-battle" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/mini-duels-battle.jpg" alt="Mini Duels Battle" loading="lazy"></div>
+                        <h3>Mini Duels Battle</h3>
+                    </a>
+                    <a href="/mini-heads-party" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/mini-heads-party.jpg" alt="Mini Heads Party" loading="lazy"></div>
+                        <h3>Mini Heads Party</h3>
+                    </a>
+                    <a href="/ragdoll-flip" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/ragdoll-flip.png" alt="Ragdoll Flip" loading="lazy"></div>
+                        <h3>Ragdoll Flip</h3>
+                    </a>
+                    <a href="/knife-master" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/knife-master.png" alt="Knife Master" loading="lazy"></div>
+                        <h3>Knife Master</h3>
+                    </a>
+                    <a href="/tapko" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/tapko.jpg" alt="Tapko" loading="lazy"></div>
+                        <h3>Tapko</h3>
+                    </a>
+                    <a href="/i-show-running-2d" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/i-show-running-2d.jpg" alt="I Show Running 2D" loading="lazy"></div>
+                        <h3>I Show Running 2D</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Racing Games</h2>
+                    <a href="/games/racing" class="view-all">View All &rarr;</a>
+                </div>
+                <div class="home-games-grid">
+                    <a href="/cool-supercars-stunts-pvp" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/cool-supercars-stunts-pvp.jpg" alt="Cool Supercars Stunts PVP" loading="lazy"></div>
+                        <h3>Supercars Stunts PVP</h3>
+                    </a>
+                    <a href="/m5-city-driver" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/m5-city-driver.jpg" alt="M5 City Driver" loading="lazy"></div>
+                        <h3>M5 City Driver</h3>
+                    </a>
+                    <a href="/police-traffic-racer" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/police-traffic-racer.jpg" alt="Police Traffic Racer" loading="lazy"></div>
+                        <h3>Police Traffic Racer</h3>
+                    </a>
+                    <a href="/slippery-drift-racing" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/slippery-drift-racing.jpg" alt="Slippery Drift Racing" loading="lazy"></div>
+                        <h3>Slippery Drift Racing</h3>
+                    </a>
+                    <a href="/racing-ball-adventure" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/racing-ball-adventure.jpg" alt="Racing Ball Adventure" loading="lazy"></div>
+                        <h3>Racing Ball Adventure</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Puzzle Games</h2>
+                    <a href="/games/puzzle" class="view-all">View All &rarr;</a>
+                </div>
+                <div class="home-games-grid">
+                    <a href="/bubble-shooter-pro-4" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/bubble-shooter-pro-4.jpg" alt="Bubble Shooter Pro 4" loading="lazy"></div>
+                        <h3>Bubble Shooter Pro 4</h3>
+                    </a>
+                    <a href="/letter-boom-blast-rush" class="game-card">
+                        <div class="game-card-thumb"><img src="/images/games/letter-boom-blast-rush.jpg" alt="Letter Boom Blast Rush" loading="lazy"></div>
+                        <h3>Letter Boom Blast Rush</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-grid-4">
                 <div class="footer-section">
-                    <h4>Quick Play</h4>
+                    <h4>Popular Games</h4>
                     <ul>
-                        <li><a href="#game">Play Boxing Random</a></li>
-                        <li><a href="#how-to-play">How to Play</a></li>
-                        <li><a href="#tips">Tips & Tricks</a></li>
+                        <li><a href="/">Boxing Random</a></li>
+                        <li><a href="/basket-random">Basket Random</a></li>
+                        <li><a href="/soccer-random">Soccer Random</a></li>
+                        <li><a href="/volley-random">Volley Random</a></li>
+                        <li><a href="/boxing-stars">Boxing Stars</a></li>
+                        <li><a href="/minibattles">MiniBattles</a></li>
+                        <li><a href="/ragdoll-flip">Ragdoll Flip</a></li>
+                        <li><a href="/knife-master">Knife Master</a></li>
                     </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="/games/fighting">Fighting Games</a></li>
+                        <li><a href="/games/sports">Sports Games</a></li>
+                        <li><a href="/games/casual">Casual & Party</a></li>
+                        <li><a href="/games/racing">Racing Games</a></li>
+                        <li><a href="/games/puzzle">Puzzle Games</a></li>
+                        <li><a href="/games/2-player">2 Player Games</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p class="footer-about-text">Boxing Random Online is your destination for free unblocked games. Play the best 2-player and casual games directly in your browser — no downloads, no sign-ups.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Legal</h4>
@@ -435,12 +623,11 @@
                         <li><a href="/privacy-policy">Privacy Policy</a></li>
                         <li><a href="/terms">Terms of Service</a></li>
                         <li><a href="/dmca">DMCA</a></li>
-                        
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Boxing Random. All rights reserved. This site is not affiliated with the original game developer.</p>
+                <p>&copy; 2026 Boxing Random. All rights reserved. This site is not affiliated with the original game developers.</p>
             </div>
         </div>
     </footer>

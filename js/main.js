@@ -121,6 +121,18 @@
         });
     }
 
+    // --- Dropdown Menu (Mobile) ---
+    var dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
+    dropdownTriggers.forEach(function (trigger) {
+        trigger.addEventListener('click', function (e) {
+            if (window.innerWidth <= 640) {
+                e.preventDefault();
+                var parent = this.closest('.nav-dropdown');
+                if (parent) parent.classList.toggle('open');
+            }
+        });
+    });
+
     // --- Smooth scroll for anchor links ---
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         if (anchor.hasAttribute('data-game-src')) return;
